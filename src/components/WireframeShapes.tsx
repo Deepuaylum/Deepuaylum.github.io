@@ -8,8 +8,6 @@ interface ShapePosition {
 }
 
 const WireframeShapes = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [shapes, setShapes] = useState<ShapePosition[]>([
     { x: 10, y: 15, offsetX: 0, offsetY: 0 },  // Top left
     { x: 85, y: 12, offsetX: 0, offsetY: 0 },  // Top right
@@ -19,22 +17,16 @@ const WireframeShapes = () => {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current) return;
-      
-      const rect = containerRef.current.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      
-      setMousePos({ x, y });
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
 
-      // Calculate repel effect for each shape
       setShapes(prevShapes => 
         prevShapes.map(shape => {
           const dx = shape.x - x;
           const dy = shape.y - y;
           const distance = Math.sqrt(dx * dx + dy * dy);
-          const repelRadius = 25; // How close cursor needs to be to trigger effect
-          const repelStrength = 40; // How far shapes move away
+          const repelRadius = 30;
+          const repelStrength = 60;
 
           if (distance < repelRadius) {
             const force = (repelRadius - distance) / repelRadius;
@@ -46,11 +38,10 @@ const WireframeShapes = () => {
             };
           }
           
-          // Smoothly return to original position
           return {
             ...shape,
-            offsetX: shape.offsetX * 0.9,
-            offsetY: shape.offsetY * 0.9,
+            offsetX: shape.offsetX * 0.92,
+            offsetY: shape.offsetY * 0.92,
           };
         })
       );
@@ -61,14 +52,15 @@ const WireframeShapes = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="absolute inset-0 pointer-events-none">
+    <>
       {/* Top left polyhedron */}
       <div 
-        className="absolute w-40 h-40 animate-float opacity-60 transition-transform duration-150 ease-out"
+        className="absolute w-40 h-40 animate-float opacity-60 pointer-events-none"
         style={{
           left: `${shapes[0].x}%`,
           top: `${shapes[0].y}%`,
           transform: `translate(${shapes[0].offsetX}px, ${shapes[0].offsetY}px)`,
+          transition: 'transform 0.15s ease-out',
         }}
       >
         <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
@@ -83,11 +75,12 @@ const WireframeShapes = () => {
 
       {/* Top right abstract lines */}
       <div 
-        className="absolute w-48 h-32 animate-float-reverse opacity-50 transition-transform duration-150 ease-out"
+        className="absolute w-48 h-32 animate-float-reverse opacity-50 pointer-events-none"
         style={{
           left: `${shapes[1].x}%`,
           top: `${shapes[1].y}%`,
           transform: `translate(${shapes[1].offsetX}px, ${shapes[1].offsetY}px)`,
+          transition: 'transform 0.15s ease-out',
         }}
       >
         <svg viewBox="0 0 200 120" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
@@ -101,11 +94,12 @@ const WireframeShapes = () => {
 
       {/* Bottom left icosahedron */}
       <div 
-        className="absolute w-36 h-36 animate-float opacity-50 transition-transform duration-150 ease-out"
+        className="absolute w-36 h-36 animate-float opacity-50 pointer-events-none"
         style={{
           left: `${shapes[2].x}%`,
           top: `${shapes[2].y}%`,
           transform: `translate(${shapes[2].offsetX}px, ${shapes[2].offsetY}px)`,
+          transition: 'transform 0.15s ease-out',
         }}
       >
         <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
@@ -119,23 +113,23 @@ const WireframeShapes = () => {
 
       {/* Bottom right torus */}
       <div 
-        className="absolute w-44 h-36 animate-spin-slow opacity-50 transition-transform duration-150 ease-out"
+        className="absolute w-44 h-36 animate-spin-slow opacity-50 pointer-events-none"
         style={{
           left: `${shapes[3].x}%`,
           top: `${shapes[3].y}%`,
           transform: `translate(${shapes[3].offsetX}px, ${shapes[3].offsetY}px)`,
+          transition: 'transform 0.15s ease-out',
         }}
       >
         <svg viewBox="0 0 200 160" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
           <ellipse cx="100" cy="80" rx="80" ry="30" strokeWidth="1" fill="none" />
           <ellipse cx="100" cy="80" rx="40" ry="15" strokeWidth="1" fill="none" />
-          {/* Cross sections */}
           <ellipse cx="60" cy="80" rx="10" ry="25" strokeWidth="0.5" fill="none" />
           <ellipse cx="100" cy="80" rx="10" ry="30" strokeWidth="0.5" fill="none" />
           <ellipse cx="140" cy="80" rx="10" ry="25" strokeWidth="0.5" fill="none" />
         </svg>
       </div>
-    </div>
+    </>
   );
 };
 
