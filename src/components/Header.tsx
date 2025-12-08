@@ -16,7 +16,7 @@ const Header = () => {
           to="/" 
           className="text-lg font-semibold text-foreground hover:opacity-80 transition-opacity"
         >
-          Your Name
+          Deepu Aylum Subramanian
         </Link>
 
         <nav className="flex items-center gap-8">
