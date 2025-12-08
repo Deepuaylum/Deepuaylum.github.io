@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 import WireframeShapes from "./WireframeShapes";
+import AnimatedText from "./AnimatedText";
 
 const HeroSection = () => {
   return (
@@ -9,8 +10,8 @@ const HeroSection = () => {
       <WireframeShapes />
 
       <div className="relative z-10 text-center max-w-2xl mx-auto px-6">
-        <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 opacity-0 animate-fade-in-up">
-          Hey there :)
+        <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
+          <AnimatedText text="Hey there :)" delay={100} />
         </h1>
 
         <p className="text-lg text-muted-foreground leading-relaxed mb-8 opacity-0 animate-fade-in-up animation-delay-100">
