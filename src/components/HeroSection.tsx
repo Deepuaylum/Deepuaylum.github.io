@@ -14,7 +14,7 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg text-muted-foreground leading-relaxed mb-8 opacity-0 animate-fade-in-up animation-delay-100">
-          I am <span className="text-foreground font-medium">Your Name</span>, a Software Developer. 
+          I am <span className="text-foreground font-medium">Deepu Aylum Subramanian</span>, a Software Developer. 
           I build modern web applications and love solving complex problems. 
           I'm passionate about clean code and great user experiences.
         </p>
