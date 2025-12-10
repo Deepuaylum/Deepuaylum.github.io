@@ -88,6 +88,49 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          {/* Technical Skills Section */}
+          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-200">
+            <h2 className="text-2xl font-bold text-foreground mb-8">Skills</h2>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+              {[
+                "SQL",
+                "Python (Pandas, Scikit-learn, Streamlit)",
+                "Power BI",
+                "Tableau",
+                "Excel (Pivot Tables, VLOOKUP, XLOOKUP)",
+                "Data Analysis",
+                "Data Visualization",
+                "Predictive Modeling",
+                "Machine Learning (Random Forest, XGBoost)",
+                "KPI & MIS Reporting",
+                "Salesforce CRM",
+                "LeadSquared",
+                "Orderhive",
+                "Process Automation",
+                "Workflow Optimization",
+                "Process Mapping (Draw.io, Lucidchart)",
+                "KYC & CDD Review",
+                "AML/KYC Documentation",
+                "CIP Validation",
+                "Risk Escalation Handling",
+                "Document Verification",
+                "Requirement Gathering",
+                "BRD Creation",
+                "UAT & System Documentation",
+                "Stakeholder Management",
+                "Cross-Functional Collaboration"
+              ].map((skill, index) => (
+                <div
+                  key={index}
+                  className="px-4 py-3 bg-muted/40 border border-border/50 rounded-lg text-sm text-foreground font-medium text-center hover:bg-muted/60 hover:border-border transition-all duration-200 hover:shadow-sm"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </main>
     </div>
