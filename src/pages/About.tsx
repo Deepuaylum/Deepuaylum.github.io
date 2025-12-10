@@ -131,6 +131,140 @@ const About = () => {
               ))}
             </div>
           </div>
+
+          {/* Professional Experience Section */}
+          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-300">
+            <h2 className="text-2xl font-bold text-foreground mb-8">Professional Experience</h2>
+            
+            <div className="space-y-8">
+              {/* Experience 1 */}
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
+                  <div className="w-px flex-1 bg-border"></div>
+                </div>
+                <div className="flex-1 pb-8">
+                  <p className="text-xs text-muted-foreground mb-1">2023 – 2024</p>
+                  <h3 className="text-base font-semibold text-foreground">Business Analyst Intern</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Techolas Technologies Pvt Ltd – Calicut, India</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Gathered requirements and created a complete Business Requirement Document (BRD) for launching an in-house EdTech application.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Designed automated dashboards in Power BI and Tableau for placement and performance analysis, improving decision visibility for management.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Experience 2 */}
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
+                  <div className="w-px flex-1 bg-border"></div>
+                </div>
+                <div className="flex-1 pb-8">
+                  <p className="text-xs text-muted-foreground mb-1">2022 – 2023</p>
+                  <h3 className="text-base font-semibold text-foreground">Team Lead – FinTech Operations / Operations Analyst</h3>
+                  <p className="text-sm text-muted-foreground mb-3">BYJU'S (Think & Learn Pvt Ltd) – Bangalore, India</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Built and maintained Power BI and Excel MIS dashboards supporting €1M+ monthly fund releases by improving reconciliation visibility.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Developed predictive ML models (Random Forest, XGBoost) with 92% accuracy to forecast loan cancellations.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Led a 10-member operations team managing finance verification, KYC workflows, and daily disbursals exceeding €50K.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Implemented automated KYC verification using TL-Pay and OCR, reducing turnaround time by 20–30%.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Collaborated with NBFC partners (Kotak, Avanse, ABFL, Credit Saison) to align documentation standards and resolve escalations.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Conducted weekly audits across Salesforce, LeadSquared, and Orderhive systems to identify data gaps and ensure CRM hygiene.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Experience 3 */}
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
+                  <div className="w-px flex-1 bg-border"></div>
+                </div>
+                <div className="flex-1 pb-8">
+                  <p className="text-xs text-muted-foreground mb-1">2019 – 2022</p>
+                  <h3 className="text-base font-semibold text-foreground">Operations Analyst / KYC Analyst</h3>
+                  <p className="text-sm text-muted-foreground mb-3">BYJU'S – Bangalore, India</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Reviewed and validated KYC, NACH, POA/POI, and income documents with over 90% accuracy.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Performed CIP validation, CDD reviews, and due-diligence checks for NBFC-backed education loan onboarding.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Built Excel/Power BI dashboards to track pipeline progress, compliance metrics, and exception queues.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Supported workflow automation projects that reduced manual verification time by 20%.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Coordinated with risk and audit teams to maintain policy adherence and governance readiness.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Experience 4 */}
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-xs text-muted-foreground mb-1">2017 – 2019</p>
+                  <h3 className="text-base font-semibold text-foreground">Business Development Associate / Analyst</h3>
+                  <p className="text-sm text-muted-foreground mb-3">BYJU'S – Bangalore, India</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Conducted 100+ client consultations weekly, generating €3,000 in weekly sales at 60%+ conversion.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Used CRM-driven insights (DTA campaign) to personalize outreach, contributing to 2.3× YoY revenue growth.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Supported long-term retention by guiding users through onboarding and adoption cycles.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Relayed customer insights to marketing and product teams to improve positioning and user experience.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
