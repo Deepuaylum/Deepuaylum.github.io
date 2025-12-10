@@ -122,9 +122,9 @@ const About = () => {
                 "Stakeholder Management",
                 "Cross-Functional Collaboration"
               ].map((skill, index) => (
-                <div
+              <div
                   key={index}
-                  className="px-4 py-3 bg-muted/40 border border-border/50 rounded-lg text-sm text-foreground font-medium text-center hover:bg-muted/60 hover:border-border transition-all duration-200 hover:shadow-sm"
+                  className="px-3 py-2 bg-muted/40 border border-border/50 rounded-md text-xs text-foreground font-medium text-center hover:bg-muted/60 hover:border-border transition-all duration-200 hover:shadow-sm"
                 >
                   {skill}
                 </div>
