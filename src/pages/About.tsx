@@ -2,73 +2,89 @@ import Header from "@/components/Header";
 import WireframeShapes from "@/components/WireframeShapes";
 
 const About = () => {
-  const skills = [
-    "JavaScript/TypeScript",
-    "React",
-    "Node.js",
-    "Python",
-    "Machine Learning",
-    "Cloud Services",
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="relative pt-24 pb-16 overflow-hidden">
         <WireframeShapes />
         
-        <div className="relative z-10 container mx-auto px-6 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 opacity-0 animate-fade-in-up">
-            About Me
-          </h1>
-
-          <div className="space-y-6 text-muted-foreground opacity-0 animate-fade-in-up animation-delay-100">
-            <p className="text-lg leading-relaxed">
-              Hello! I'm a passionate software developer with a love for building 
-              elegant solutions to complex problems. With experience in full-stack 
-              development and a keen interest in emerging technologies, I strive to 
-              create applications that make a difference.
-            </p>
-
-            <p className="text-lg leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open-source projects, or sharing knowledge through 
-              technical writing. I believe in continuous learning and the power 
-              of community in tech.
+        <div className="relative z-10 container mx-auto px-6 max-w-4xl">
+          {/* Title Section */}
+          <div className="text-center mb-12 opacity-0 animate-fade-in-up">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              About Me
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Data and operations excite me because they reveal how a business truly runs.
             </p>
           </div>
 
-          <div className="mt-12 opacity-0 animate-fade-in-up animation-delay-200">
-            <h2 className="text-2xl font-semibold text-foreground mb-6">
-              Skills & Technologies
-            </h2>
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span key={skill} className="badge-role">
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-12 opacity-0 animate-fade-in-up animation-delay-300">
-            <h2 className="text-2xl font-semibold text-foreground mb-6">
-              Experience
-            </h2>
-            <div className="space-y-6">
-              <div className="border-l-2 border-border pl-6">
-                <h3 className="text-lg font-medium text-foreground">Software Developer</h3>
-                <p className="text-muted-foreground">Company Name • 2022 - Present</p>
-                <p className="mt-2 text-muted-foreground">
-                  Building and maintaining web applications with modern technologies.
-                </p>
+          {/* Main Content Card */}
+          <div className="border border-border rounded-lg p-8 md:p-12 bg-background opacity-0 animate-fade-in-up animation-delay-100">
+            <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-12">
+              {/* Left Side - Decorative Element */}
+              <div className="flex items-start justify-center">
+                <div className="w-full aspect-square bg-muted/30 rounded-lg flex items-center justify-center">
+                  <svg 
+                    viewBox="0 0 100 100" 
+                    className="w-32 h-32 text-muted-foreground/30"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  >
+                    <circle cx="50" cy="35" r="12" />
+                    <path d="M50 50 C30 50 25 70 25 85 L75 85 C75 70 70 50 50 50" />
+                    <circle cx="30" cy="35" r="8" />
+                    <path d="M30 45 C18 45 15 60 15 70 L45 70" />
+                    <circle cx="70" cy="35" r="8" />
+                    <path d="M70 45 C82 45 85 60 85 70 L55 70" />
+                  </svg>
+                </div>
               </div>
-              <div className="border-l-2 border-border pl-6">
-                <h3 className="text-lg font-medium text-foreground">Junior Developer</h3>
-                <p className="text-muted-foreground">Previous Company • 2020 - 2022</p>
-                <p className="mt-2 text-muted-foreground">
-                  Developed features and fixed bugs for client projects.
+
+              {/* Right Side - Content */}
+              <div className="space-y-5 text-muted-foreground">
+                <p className="leading-relaxed">
+                  With over 6 years of experience in Sales and Fintech Operations, I specialise in sales data analysis, MIS reporting, dashboards, and process optimisation.
                 </p>
+
+                <p className="leading-relaxed">
+                  My areas of expertise include Sales and CRM workflows, data analysis and reporting, machine learning, and KYC/CDD due-diligence processes involving documentation checks, CIP validation, and risk escalation.
+                </p>
+
+                <p className="leading-relaxed">
+                  Throughout my career, I have worked across Sales, Fintech Operations, and Sales Data Analysis in a fast-growing EdTech organisation. I have experience building machine learning models for customer fraud detection, developing MIS reports for senior leadership, and managing stakeholders across sales, finance, and compliance. My work combines analytics, process governance, and operational strategy to drive clarity and decision confidence at scale.
+                </p>
+
+                {/* Personal Interests */}
+                <div className="pt-4">
+                  <h2 className="text-foreground font-medium mb-3">Personal Interests</h2>
+                  <p className="leading-relaxed">
+                    Watching football, playing badminton, and passionate about scuba diving and marine life 🤿
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Info Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-8 border-t border-border">
+              <div>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground/70 mb-1">Email</p>
+                <a href="mailto:deepuaylum@gmail.com" className="text-foreground hover:text-primary transition-colors text-sm font-medium">
+                  deepuaylum@gmail.com
+                </a>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground/70 mb-1">Location</p>
+                <p className="text-foreground text-sm font-medium">Based in Cork, open to relocation</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground/70 mb-1">Employment</p>
+                <p className="text-foreground text-sm font-medium">Open to opportunities</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground/70 mb-1">Languages</p>
+                <p className="text-foreground text-sm font-medium">English, Malayalam, Hindi, Tamil</p>
               </div>
             </div>
           </div>
