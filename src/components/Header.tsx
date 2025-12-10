@@ -4,7 +4,7 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Blog", path: "/blog" },
+    { name: "Projects", path: "/projects" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];

@@ -15,13 +15,11 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg text-muted-foreground leading-relaxed mb-8 opacity-0 animate-fade-in-up animation-delay-100">
-          I am <span className="text-foreground font-medium">Deepu Aylum Subramanian</span>, a Software Developer. 
-          I build modern web applications and love solving complex problems. 
-          I'm passionate about clean code and great user experiences.
+          I'm <span className="text-foreground font-medium">Deepu Aylum Subramanian</span>, a Business Analytics graduate with 6+ years of experience in Sales, Fintech operations, Reporting, and predictive modeling. I enjoy turning complex data into clear, useful insights and building practical solutions like predictive models, dashboards, and automated workflows. My work combines analytics, operations, and strategy to improve decisions, simplify processes, and deliver real business impact.
         </p>
 
         <div className="mb-8 opacity-0 animate-fade-in-up animation-delay-200">
-          <span className="badge-role">Software Developer</span>
+          <span className="badge-role">Data and Operations Analyst</span>
         </div>
 
         <div className="flex justify-center mb-10 opacity-0 animate-fade-in-up animation-delay-300">
