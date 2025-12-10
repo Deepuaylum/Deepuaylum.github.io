@@ -93,24 +93,24 @@ const About = () => {
           <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-200">
             <h2 className="text-2xl font-bold text-foreground mb-8">Skills</h2>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
               {[
                 "SQL",
-                "Python (Pandas, Scikit-learn, Streamlit)",
+                "Python",
                 "Power BI",
                 "Tableau",
-                "Excel (Pivot Tables, VLOOKUP, XLOOKUP)",
+                "Excel",
                 "Data Analysis",
                 "Data Visualization",
                 "Predictive Modeling",
-                "Machine Learning (Random Forest, XGBoost)",
+                "Machine Learning",
                 "KPI & MIS Reporting",
                 "Salesforce CRM",
                 "LeadSquared",
                 "Orderhive",
                 "Process Automation",
                 "Workflow Optimization",
-                "Process Mapping (Draw.io, Lucidchart)",
+                "Process Mapping",
                 "KYC & CDD Review",
                 "AML/KYC Documentation",
                 "CIP Validation",
@@ -122,12 +122,12 @@ const About = () => {
                 "Stakeholder Management",
                 "Cross-Functional Collaboration"
               ].map((skill, index) => (
-              <div
+                <span
                   key={index}
-                  className="px-3 py-2 bg-muted/40 border border-border/50 rounded-md text-xs text-foreground font-medium text-center hover:bg-muted/60 hover:border-border transition-all duration-200 hover:shadow-sm"
+                  className="text-sm text-muted-foreground"
                 >
                   {skill}
-                </div>
+                </span>
               ))}
             </div>
           </div>
