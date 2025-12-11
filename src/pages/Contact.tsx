@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import WireframeShapes from "@/components/WireframeShapes";
 import SocialLinks from "@/components/SocialLinks";
 import { Mail } from "lucide-react";
+import { ScrollAnimate } from "@/hooks/useScrollAnimation";
 
 const Contact = () => {
   return (
@@ -11,16 +12,20 @@ const Contact = () => {
         <WireframeShapes />
         
         <div className="relative z-10 container mx-auto px-6 max-w-2xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 opacity-0 animate-fade-in-up">
-            Get in Touch
-          </h1>
+          <ScrollAnimate>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+              Get in Touch
+            </h1>
+          </ScrollAnimate>
 
-          <p className="text-lg text-muted-foreground mb-12 opacity-0 animate-fade-in-up animation-delay-100">
-            I'm always open to discussing new projects, creative ideas, 
-            or opportunities to be part of your vision.
-          </p>
+          <ScrollAnimate delay={100}>
+            <p className="text-lg text-muted-foreground mb-12">
+              I'm always open to discussing new projects, creative ideas, 
+              or opportunities to be part of your vision.
+            </p>
+          </ScrollAnimate>
 
-          <div className="mb-12 opacity-0 animate-fade-in-up animation-delay-200">
+          <ScrollAnimate delay={200} className="mb-12">
             <a 
               href="mailto:deepuaylum@gmail.com" 
               className="btn-primary inline-flex group"
@@ -28,14 +33,14 @@ const Contact = () => {
               <Mail className="w-5 h-5" />
               deepuaylum@gmail.com
             </a>
-          </div>
+          </ScrollAnimate>
 
-          <div className="opacity-0 animate-fade-in-up animation-delay-300">
+          <ScrollAnimate delay={300}>
             <p className="text-muted-foreground mb-6">Or find me on</p>
             <div className="flex justify-center">
               <SocialLinks />
             </div>
-          </div>
+          </ScrollAnimate>
         </div>
       </main>
     </div>

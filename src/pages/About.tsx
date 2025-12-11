@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import WireframeShapes from "@/components/WireframeShapes";
+import { ScrollAnimate } from "@/hooks/useScrollAnimation";
 
 const About = () => {
   return (
@@ -10,17 +11,17 @@ const About = () => {
         
         <div className="relative z-10 container mx-auto px-6 max-w-4xl">
           {/* Title Section */}
-          <div className="text-center mb-12 opacity-0 animate-fade-in-up">
+          <ScrollAnimate className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
               About Me
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Data and operations excite me because they reveal how a business truly runs.
             </p>
-          </div>
+          </ScrollAnimate>
 
           {/* Main Content Card */}
-          <div className="border border-border rounded-lg p-8 md:p-12 bg-background opacity-0 animate-fade-in-up animation-delay-100">
+          <ScrollAnimate delay={100} className="border border-border rounded-lg p-8 md:p-12 bg-background">
             <div className="grid md:grid-cols-[280px_1fr] gap-8 md:gap-12">
               {/* Left Side - Decorative Element */}
               <div className="flex items-start justify-center">
@@ -87,10 +88,10 @@ const About = () => {
                 <p className="text-foreground text-sm font-medium">English, Malayalam, Hindi, Tamil</p>
               </div>
             </div>
-          </div>
+          </ScrollAnimate>
 
           {/* Technical Skills Section */}
-          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-200">
+          <ScrollAnimate delay={100} className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8">
             <h2 className="text-2xl font-bold text-foreground mb-8">Skills</h2>
             
             <div className="flex flex-wrap gap-x-6 gap-y-2">
@@ -130,10 +131,10 @@ const About = () => {
                 </span>
               ))}
             </div>
-          </div>
+          </ScrollAnimate>
 
           {/* Professional Experience Section */}
-          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-300">
+          <ScrollAnimate delay={100} className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8">
             <h2 className="text-2xl font-bold text-foreground mb-8">Professional Experience</h2>
             
             <div className="space-y-8">
@@ -264,10 +265,10 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimate>
 
           {/* Education Section */}
-          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-400">
+          <ScrollAnimate delay={100} className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8">
             <h2 className="text-2xl font-bold text-foreground mb-8">Education</h2>
             
             <div className="space-y-8">
@@ -308,10 +309,10 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollAnimate>
 
           {/* Certifications Section */}
-          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-500">
+          <ScrollAnimate delay={100} className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8">
             <h2 className="text-2xl font-bold text-foreground mb-8">Certifications</h2>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -329,7 +330,7 @@ const About = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </ScrollAnimate>
         </div>
       </main>
     </div>
