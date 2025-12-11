@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import WireframeShapes from "@/components/WireframeShapes";
 import { ArrowUpRight, Star, GitFork } from "lucide-react";
+import { ScrollAnimate } from "@/hooks/useScrollAnimation";
 
 interface GitHubRepo {
   id: number;
@@ -61,13 +62,17 @@ const Projects = () => {
         <WireframeShapes />
 
         <div className="relative z-10 container mx-auto px-6 max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8 opacity-0 animate-fade-in-up">
-            Projects
-          </h1>
+          <ScrollAnimate>
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
+              Projects
+            </h1>
+          </ScrollAnimate>
 
-          <p className="text-lg text-muted-foreground mb-12 opacity-0 animate-fade-in-up animation-delay-100">
-            My GitHub repositories showcasing data analytics, machine learning, and automation projects.
-          </p>
+          <ScrollAnimate delay={100}>
+            <p className="text-lg text-muted-foreground mb-12">
+              My GitHub repositories showcasing data analytics, machine learning, and automation projects.
+            </p>
+          </ScrollAnimate>
 
           {loading && (
             <div className="grid gap-6 md:grid-cols-2">
