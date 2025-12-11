@@ -148,12 +148,12 @@ const About = () => {
                   <h3 className="text-base font-semibold text-foreground">Business Analyst Intern</h3>
                   <p className="text-sm text-muted-foreground mb-3">Techolas Technologies Pvt Ltd – Calicut, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Gathered requirements and created a complete Business Requirement Document (BRD) for launching an in-house EdTech application.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Designed automated dashboards in Power BI and Tableau for placement and performance analysis, improving decision visibility for management.</span>
                     </li>
                   </ul>
@@ -171,28 +171,28 @@ const About = () => {
                   <h3 className="text-base font-semibold text-foreground">Team Lead – FinTech Operations / Operations Analyst</h3>
                   <p className="text-sm text-muted-foreground mb-3">BYJU'S (Think & Learn Pvt Ltd) – Bangalore, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Built and maintained Power BI and Excel MIS dashboards supporting €1M+ monthly fund releases by improving reconciliation visibility.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Developed predictive ML models (Random Forest, XGBoost) with 92% accuracy to forecast loan cancellations.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Led a 10-member operations team managing finance verification, KYC workflows, and daily disbursals exceeding €50K.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Implemented automated KYC verification using TL-Pay and OCR, reducing turnaround time by 20–30%.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Collaborated with NBFC partners (Kotak, Avanse, ABFL, Credit Saison) to align documentation standards and resolve escalations.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Conducted weekly audits across Salesforce, LeadSquared, and Orderhive systems to identify data gaps and ensure CRM hygiene.</span>
                     </li>
                   </ul>
@@ -210,24 +210,24 @@ const About = () => {
                   <h3 className="text-base font-semibold text-foreground">Operations Analyst / KYC Analyst</h3>
                   <p className="text-sm text-muted-foreground mb-3">BYJU'S – Bangalore, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Reviewed and validated KYC, NACH, POA/POI, and income documents with over 90% accuracy.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Performed CIP validation, CDD reviews, and due-diligence checks for NBFC-backed education loan onboarding.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Built Excel/Power BI dashboards to track pipeline progress, compliance metrics, and exception queues.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Supported workflow automation projects that reduced manual verification time by 20%.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Coordinated with risk and audit teams to maintain policy adherence and governance readiness.</span>
                     </li>
                   </ul>
@@ -244,20 +244,20 @@ const About = () => {
                   <h3 className="text-base font-semibold text-foreground">Business Development Associate / Analyst</h3>
                   <p className="text-sm text-muted-foreground mb-3">BYJU'S – Bangalore, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Conducted 100+ client consultations weekly, generating €3,000 in weekly sales at 60%+ conversion.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Used CRM-driven insights (DTA campaign) to personalize outreach, contributing to 2.3× YoY revenue growth.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Supported long-term retention by guiding users through onboarding and adoption cycles.</span>
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Relayed customer insights to marketing and product teams to improve positioning and user experience.</span>
                     </li>
                   </ul>
@@ -282,8 +282,8 @@ const About = () => {
                   <h3 className="text-base font-semibold text-foreground">MSc in Business Analytics</h3>
                   <p className="text-sm text-muted-foreground mb-3">University College Cork – Cork, Ireland</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Graduated with First Class Honours.</span>
                     </li>
                   </ul>
@@ -300,8 +300,8 @@ const About = () => {
                   <h3 className="text-base font-semibold text-foreground">B.Tech in Applied Electronics & Instrumentation</h3>
                   <p className="text-sm text-muted-foreground mb-3">Rajagiri School of Engineering and Technology – Kochi, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
-                    <li className="flex gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li className="flex gap-2 items-baseline">
+                      <span className="text-primary">•</span>
                       <span>Graduated with a CGPA of 7.06.</span>
                     </li>
                   </ul>
@@ -319,9 +319,7 @@ const About = () => {
                 "AIGPE Process Mapping Specialist",
                 "AIGPE Lean Six Sigma White Belt Certified",
                 "Python for Data Analysis & Business Intelligence (Maven Analytics)",
-                "SQL for Data Analysis — MySQL (Maven Analytics)",
-                "Python + Machine Learning Academic Projects",
-                "Power BI Dashboard Development (Academic + Work Projects)"
+                "SQL for Data Analysis — MySQL (Maven Analytics)"
               ].map((cert, index) => (
                 <div
                   key={index}
