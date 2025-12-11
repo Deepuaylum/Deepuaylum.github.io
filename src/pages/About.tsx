@@ -49,7 +49,7 @@ const About = () => {
                 </p>
 
                 <p className="leading-relaxed">
-                  My areas of expertise include Sales and CRM workflows, data analysis and reporting, machine learning, and KYC/CDD due-diligence processes involving documentation checks, CIP validation, and risk escalation.
+                  My areas of expertise include Sales and CRM workflows, data analysis and reporting, machine learning, and KYC/CDD processes involving documentation checks, CIP validation, and risk escalation.
                 </p>
 
                 <p className="leading-relaxed">
