@@ -265,6 +265,73 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          {/* Education Section */}
+          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-400">
+            <h2 className="text-2xl font-bold text-foreground mb-8">Education</h2>
+            
+            <div className="space-y-8">
+              {/* Education 1 */}
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
+                  <div className="w-px flex-1 bg-border"></div>
+                </div>
+                <div className="flex-1 pb-8">
+                  <p className="text-xs text-muted-foreground mb-1">2024 – 2025</p>
+                  <h3 className="text-base font-semibold text-foreground">MSc in Business Analytics</h3>
+                  <p className="text-sm text-muted-foreground mb-3">University College Cork – Cork, Ireland</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Graduated with First Class Honours.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Education 2 */}
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
+                </div>
+                <div className="flex-1">
+                  <p className="text-xs text-muted-foreground mb-1">2013 – 2017</p>
+                  <h3 className="text-base font-semibold text-foreground">B.Tech in Applied Electronics & Instrumentation</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Rajagiri School of Engineering and Technology – Kochi, India</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
+                    <li className="flex gap-2">
+                      <span className="text-primary mt-1.5">•</span>
+                      <span>Graduated with a CGPA of 7.06.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Certifications Section */}
+          <div className="border border-border rounded-lg p-8 md:p-12 bg-background mt-8 opacity-0 animate-fade-in-up animation-delay-500">
+            <h2 className="text-2xl font-bold text-foreground mb-8">Certifications</h2>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {[
+                "AIGPE Process Mapping Specialist",
+                "AIGPE Lean Six Sigma White Belt Certified",
+                "Python for Data Analysis & Business Intelligence (Maven Analytics)",
+                "SQL for Data Analysis — MySQL (Maven Analytics)",
+                "Python + Machine Learning Academic Projects",
+                "Power BI Dashboard Development (Academic + Work Projects)"
+              ].map((cert, index) => (
+                <div
+                  key={index}
+                  className="bg-muted/30 border border-border rounded-2xl p-4 text-sm text-foreground hover:bg-muted/50 hover:shadow-md transition-all duration-200"
+                >
+                  {cert}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </main>
     </div>
