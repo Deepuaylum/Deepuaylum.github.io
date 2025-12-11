@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 interface SocialLink {
   name: string;
@@ -10,22 +10,17 @@ const socialLinks: SocialLink[] = [
   {
     name: "GitHub",
     icon: <Github className="w-5 h-5" />,
-    url: "https://github.com",
+    url: "https://github.com/Deepuaylum",
   },
   {
     name: "LinkedIn",
     icon: <Linkedin className="w-5 h-5" />,
-    url: "https://linkedin.com",
-  },
-  {
-    name: "Medium",
-    icon: <FileText className="w-5 h-5" />,
-    url: "https://medium.com",
+    url: "https://www.linkedin.com/in/deepu-aylum-subramanian-727300131",
   },
   {
     name: "Email",
     icon: <Mail className="w-5 h-5" />,
-    url: "mailto:hello@example.com",
+    url: "mailto:deepuaylum@gmail.com",
   },
 ];
 

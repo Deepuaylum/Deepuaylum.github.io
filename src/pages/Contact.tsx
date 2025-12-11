@@ -22,11 +22,11 @@ const Contact = () => {
 
           <div className="mb-12 opacity-0 animate-fade-in-up animation-delay-200">
             <a 
-              href="mailto:hello@example.com" 
+              href="mailto:deepuaylum@gmail.com" 
               className="btn-primary inline-flex group"
             >
               <Mail className="w-5 h-5" />
-              hello@example.com
+              deepuaylum@gmail.com
             </a>
           </div>
 
