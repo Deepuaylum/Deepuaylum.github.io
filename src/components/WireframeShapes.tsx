@@ -11,10 +11,10 @@ interface ShapeState {
 
 const WireframeShapes = () => {
   const [shapes, setShapes] = useState<ShapeState[]>([
-    { x: 10, y: 20, vx: 0.3, vy: 0.2, offsetX: 0, offsetY: 0 },
-    { x: 80, y: 15, vx: -0.25, vy: 0.15, offsetX: 0, offsetY: 0 },
-    { x: 8, y: 60, vx: 0.2, vy: -0.25, offsetX: 0, offsetY: 0 },
-    { x: 85, y: 55, vx: -0.3, vy: -0.2, offsetX: 0, offsetY: 0 },
+    { x: 10, y: 20, vx: 0.08, vy: 0.05, offsetX: 0, offsetY: 0 },
+    { x: 80, y: 15, vx: -0.06, vy: 0.04, offsetX: 0, offsetY: 0 },
+    { x: 8, y: 60, vx: 0.05, vy: -0.06, offsetX: 0, offsetY: 0 },
+    { x: 85, y: 55, vx: -0.07, vy: -0.05, offsetX: 0, offsetY: 0 },
   ]);
   
   const mouseRef = useRef({ x: -1000, y: -1000 });
