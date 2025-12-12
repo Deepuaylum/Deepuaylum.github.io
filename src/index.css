@@ -82,11 +82,17 @@
 @layer base {
   * {
     @apply border-border;
+    cursor: none;
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    cursor: none;
+  }
+
+  a, button, [role="button"] {
+    cursor: none;
   }
 }
 
