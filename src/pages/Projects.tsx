@@ -69,9 +69,30 @@ const Projects = () => {
           </ScrollAnimate>
 
           <ScrollAnimate delay={100}>
-            <p className="text-lg text-muted-foreground mb-12">
+            <p className="text-lg text-muted-foreground mb-8">
               My GitHub repositories showcasing data analytics, machine learning, and automation projects.
             </p>
+          </ScrollAnimate>
+
+          {/* Featured Project - Reef Dashboard */}
+          <ScrollAnimate delay={150}>
+            <div className="mb-12 p-6 rounded-xl border border-border bg-card">
+              <h2 className="text-xl font-semibold text-foreground mb-3">
+                Reef Dashboard
+              </h2>
+              <p className="text-muted-foreground mb-4">
+                Interactive dashboard for reef data visualization and analysis.
+              </p>
+              <a
+                href="https://reef-dashboard.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-foreground font-medium hover:opacity-70 transition-opacity"
+              >
+                Click this link for Accessing the dashboard
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
           </ScrollAnimate>
 
           {loading && (
