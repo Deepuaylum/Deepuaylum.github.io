@@ -15,6 +15,10 @@ const WireframeShapes = () => {
     { x: 80, y: 15, vx: -0.06, vy: 0.04, offsetX: 0, offsetY: 0 },
     { x: 8, y: 60, vx: 0.05, vy: -0.06, offsetX: 0, offsetY: 0 },
     { x: 85, y: 55, vx: -0.07, vy: -0.05, offsetX: 0, offsetY: 0 },
+    { x: 50, y: 75, vx: 0.04, vy: 0.06, offsetX: 0, offsetY: 0 },
+    { x: 25, y: 40, vx: -0.05, vy: 0.03, offsetX: 0, offsetY: 0 },
+    { x: 70, y: 35, vx: 0.03, vy: -0.04, offsetX: 0, offsetY: 0 },
+    { x: 40, y: 10, vx: -0.04, vy: 0.05, offsetX: 0, offsetY: 0 },
   ]);
   
   const mouseRef = useRef({ x: -1000, y: -1000 });
@@ -183,6 +187,95 @@ const WireframeShapes = () => {
             <path d="M30,55 Q60,80 90,55" strokeWidth="0.4" fill="none" opacity="0.5" />
             <path d="M30,125 Q60,100 90,125" strokeWidth="0.4" fill="none" opacity="0.5" />
             <path d="M25,145 Q60,110 95,145" strokeWidth="0.4" fill="none" opacity="0.5" />
+          </svg>
+        </div>
+      </div>
+      {/* Cube wireframe */}
+      <div 
+        className="absolute pointer-events-none transition-transform duration-100"
+        style={{
+          left: `${shapes[4].x}%`,
+          top: `${shapes[4].y}%`,
+          transform: `translate(-50%, -50%) translate(${shapes[4].offsetX}px, ${shapes[4].offsetY}px)`,
+        }}
+      >
+        <div className="w-24 h-24 md:w-32 md:h-32 opacity-50">
+          <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
+            <polygon points="30,50 75,30 120,50 75,70" strokeWidth="0.8" fill="none" />
+            <polygon points="30,50 30,100 75,120 75,70" strokeWidth="0.8" fill="none" />
+            <polygon points="120,50 120,100 75,120 75,70" strokeWidth="0.8" fill="none" />
+            <line x1="75" y1="30" x2="75" y2="70" strokeWidth="0.5" opacity="0.5" />
+            <line x1="30" y1="50" x2="75" y2="70" strokeWidth="0.5" opacity="0.5" />
+            <line x1="120" y1="50" x2="75" y2="70" strokeWidth="0.5" opacity="0.5" />
+          </svg>
+        </div>
+      </div>
+
+      {/* Triangular prism */}
+      <div 
+        className="absolute pointer-events-none transition-transform duration-100"
+        style={{
+          left: `${shapes[5].x}%`,
+          top: `${shapes[5].y}%`,
+          transform: `translate(-50%, -50%) translate(${shapes[5].offsetX}px, ${shapes[5].offsetY}px)`,
+        }}
+      >
+        <div className="w-28 h-28 md:w-36 md:h-36 opacity-45">
+          <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
+            <polygon points="75,20 130,110 20,110" strokeWidth="0.8" fill="none" />
+            <polygon points="75,40 110,100 40,100" strokeWidth="0.6" fill="none" opacity="0.7" />
+            <line x1="75" y1="20" x2="75" y2="40" strokeWidth="0.5" />
+            <line x1="130" y1="110" x2="110" y2="100" strokeWidth="0.5" />
+            <line x1="20" y1="110" x2="40" y2="100" strokeWidth="0.5" />
+            <circle cx="75" cy="70" r="2" fill="currentColor" opacity="0.5" />
+          </svg>
+        </div>
+      </div>
+
+      {/* Hexagonal pattern */}
+      <div 
+        className="absolute pointer-events-none transition-transform duration-100"
+        style={{
+          left: `${shapes[6].x}%`,
+          top: `${shapes[6].y}%`,
+          transform: `translate(-50%, -50%) translate(${shapes[6].offsetX}px, ${shapes[6].offsetY}px)`,
+        }}
+      >
+        <div className="w-28 h-28 md:w-36 md:h-36 opacity-45">
+          <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
+            <polygon points="75,15 120,40 120,90 75,115 30,90 30,40" strokeWidth="0.8" fill="none" />
+            <polygon points="75,35 100,50 100,80 75,95 50,80 50,50" strokeWidth="0.6" fill="none" opacity="0.7" />
+            <line x1="75" y1="15" x2="75" y2="35" strokeWidth="0.5" opacity="0.6" />
+            <line x1="120" y1="40" x2="100" y2="50" strokeWidth="0.5" opacity="0.6" />
+            <line x1="120" y1="90" x2="100" y2="80" strokeWidth="0.5" opacity="0.6" />
+            <line x1="75" y1="115" x2="75" y2="95" strokeWidth="0.5" opacity="0.6" />
+            <line x1="30" y1="90" x2="50" y2="80" strokeWidth="0.5" opacity="0.6" />
+            <line x1="30" y1="40" x2="50" y2="50" strokeWidth="0.5" opacity="0.6" />
+            <circle cx="75" cy="65" r="8" strokeWidth="0.5" fill="none" opacity="0.5" />
+          </svg>
+        </div>
+      </div>
+
+      {/* Spiral helix */}
+      <div 
+        className="absolute pointer-events-none transition-transform duration-100"
+        style={{
+          left: `${shapes[7].x}%`,
+          top: `${shapes[7].y}%`,
+          transform: `translate(-50%, -50%) translate(${shapes[7].offsetX}px, ${shapes[7].offsetY}px)`,
+        }}
+      >
+        <div className="w-24 h-32 md:w-28 md:h-40 opacity-45">
+          <svg viewBox="0 0 100 150" fill="none" stroke="currentColor" className="text-wireframe-stroke w-full h-full">
+            <ellipse cx="50" cy="20" rx="30" ry="10" strokeWidth="0.8" fill="none" />
+            <ellipse cx="50" cy="50" rx="25" ry="8" strokeWidth="0.7" fill="none" opacity="0.8" />
+            <ellipse cx="50" cy="80" rx="20" ry="6" strokeWidth="0.6" fill="none" opacity="0.7" />
+            <ellipse cx="50" cy="110" rx="15" ry="5" strokeWidth="0.5" fill="none" opacity="0.6" />
+            <ellipse cx="50" cy="135" rx="10" ry="4" strokeWidth="0.4" fill="none" opacity="0.5" />
+            <path d="M20,20 Q50,35 80,20" strokeWidth="0.5" fill="none" opacity="0.6" />
+            <path d="M25,50 Q50,65 75,50" strokeWidth="0.5" fill="none" opacity="0.5" />
+            <path d="M30,80 Q50,95 70,80" strokeWidth="0.4" fill="none" opacity="0.4" />
+            <line x1="50" y1="20" x2="50" y2="135" strokeWidth="0.4" opacity="0.3" />
           </svg>
         </div>
       </div>
