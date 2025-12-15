@@ -169,7 +169,7 @@ const About = () => {
                 </div>
                 <div className="flex-1 pb-8">
                   <p className="text-xs text-muted-foreground mb-1">2022 – 2023</p>
-                  <h3 className="text-base font-semibold text-foreground">Team Lead – FinTech Operations / Operations Analyst</h3>
+                  <h3 className="text-base font-semibold text-foreground">Team Lead - FinTech Operations Analyst</h3>
                   <p className="text-sm text-muted-foreground mb-3">BYJU'S (Think & Learn Pvt Ltd) – Bangalore, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2 items-baseline">
@@ -208,7 +208,7 @@ const About = () => {
                 </div>
                 <div className="flex-1 pb-8">
                   <p className="text-xs text-muted-foreground mb-1">2019 – 2022</p>
-                  <h3 className="text-base font-semibold text-foreground">Operations Analyst / KYC Analyst</h3>
+                  <h3 className="text-base font-semibold text-foreground">KYC Analyst</h3>
                   <p className="text-sm text-muted-foreground mb-3">BYJU'S – Bangalore, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2 items-baseline">
@@ -242,7 +242,7 @@ const About = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-xs text-muted-foreground mb-1">2017 – 2019</p>
-                  <h3 className="text-base font-semibold text-foreground">Business Development Associate / Analyst</h3>
+                  <h3 className="text-base font-semibold text-foreground">Business Development Associate</h3>
                   <p className="text-sm text-muted-foreground mb-3">BYJU'S – Bangalore, India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2 items-baseline">
