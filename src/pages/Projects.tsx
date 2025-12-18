@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import WireframeShapes from "@/components/WireframeShapes";
-import { ArrowUpRight, Star, GitFork } from "lucide-react";
+import { ArrowUpRight, Star, GitFork, BookOpen, Brain } from "lucide-react";
 import { ScrollAnimate } from "@/hooks/useScrollAnimation";
 
 interface GitHubRepo {
@@ -14,6 +14,23 @@ interface GitHubRepo {
   language: string | null;
   updated_at: string;
 }
+
+const currentlyWorkingOn = [
+  {
+    id: 1,
+    title: "PL-300 Power BI Data Analyst Certification",
+    description: "Preparing for Microsoft Power BI Data Analyst certification to enhance data visualization and business intelligence skills.",
+    type: "Learning",
+    icon: BookOpen,
+  },
+  {
+    id: 2,
+    title: "La Liga 2026 Winner Prediction",
+    description: "Building a machine learning model to predict the La Liga 2025-26 season winner using historical data and advanced analytics.",
+    type: "Machine Learning",
+    icon: Brain,
+  },
+];
 
 const Projects = () => {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
@@ -29,8 +46,14 @@ const Projects = () => {
         if (!response.ok) {
           throw new Error("Failed to fetch repositories");
         }
-        const data = await response.json();
-        setRepos(data);
+        const data: GitHubRepo[] = await response.json();
+        // Sort to put Deepuaylum.github.io last
+        const sorted = data.sort((a, b) => {
+          if (a.name.toLowerCase() === "deepuaylum.github.io") return 1;
+          if (b.name.toLowerCase() === "deepuaylum.github.io") return -1;
+          return 0;
+        });
+        setRepos(sorted);
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred");
       } finally {
@@ -68,9 +91,48 @@ const Projects = () => {
             </h1>
           </ScrollAnimate>
 
+          {/* Currently Working On Section */}
           <ScrollAnimate delay={100}>
-            <p className="text-lg text-muted-foreground mb-12">
-              My GitHub repositories showcasing data analytics, machine learning, and automation projects.
+            <h2 className="text-2xl font-semibold text-foreground mb-6">
+              Currently Working On
+            </h2>
+          </ScrollAnimate>
+
+          <div className="grid gap-6 md:grid-cols-2 mb-16">
+            {currentlyWorkingOn.map((item, index) => (
+              <ScrollAnimate key={item.id} delay={150 + index * 100}>
+                <div className="p-6 rounded-xl border border-primary/30 bg-primary/5 hover:border-primary/50 transition-all duration-300">
+                  <div className="flex items-start gap-4 mb-3">
+                    <div className="p-2 rounded-lg bg-primary/10">
+                      <item.icon className="w-5 h-5 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <span className="text-xs font-medium text-primary mb-1 block">
+                        {item.type}
+                      </span>
+                      <h3 className="text-lg font-semibold text-foreground">
+                        {item.title}
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-muted-foreground text-sm">
+                    {item.description}
+                  </p>
+                </div>
+              </ScrollAnimate>
+            ))}
+          </div>
+
+          {/* GitHub Repositories Section */}
+          <ScrollAnimate delay={300}>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">
+              GitHub Repositories
+            </h2>
+          </ScrollAnimate>
+
+          <ScrollAnimate delay={350}>
+            <p className="text-lg text-muted-foreground mb-8">
+              My repositories showcasing data analytics, machine learning, and automation projects.
             </p>
           </ScrollAnimate>
 
@@ -104,7 +166,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group p-6 rounded-xl border border-border bg-card hover:border-foreground/20 transition-all duration-300 opacity-0 animate-fade-in-up"
-                  style={{ animationDelay: `${(index + 2) * 100}ms` }}
+                  style={{ animationDelay: `${(index + 4) * 100}ms` }}
                 >
                   <div className="flex items-start justify-between mb-3">
                     <h2 className="text-lg font-semibold text-foreground group-hover:text-foreground/80 transition-colors">
