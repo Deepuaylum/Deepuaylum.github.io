@@ -100,8 +100,8 @@ const Projects = () => {
 
           <div className="grid gap-6 md:grid-cols-2 mb-16">
             {currentlyWorkingOn.map((item, index) => (
-              <ScrollAnimate key={item.id} delay={150 + index * 100}>
-                <div className="p-6 rounded-xl border border-primary/30 bg-primary/5 hover:border-primary/50 transition-all duration-300">
+              <ScrollAnimate key={item.id} delay={150 + index * 100} className="h-full">
+                <div className="h-full p-6 rounded-xl border border-primary/30 bg-primary/5 hover:border-primary/50 transition-all duration-300 flex flex-col">
                   <div className="flex items-start gap-4 mb-3">
                     <div className="p-2 rounded-lg bg-primary/10">
                       <item.icon className="w-5 h-5 text-primary" />
@@ -115,7 +115,7 @@ const Projects = () => {
                       </h3>
                     </div>
                   </div>
-                  <p className="text-muted-foreground text-sm">
+                  <p className="text-muted-foreground text-sm flex-1">
                     {item.description}
                   </p>
                 </div>
