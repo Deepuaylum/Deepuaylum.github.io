@@ -207,29 +207,21 @@ const About = () => {
                   <div className="w-px flex-1 bg-border"></div>
                 </div>
                 <div className="flex-1 pb-8">
-                  <p className="text-xs text-muted-foreground mb-1">2019 – 2022</p>
-                  <h3 className="text-base font-semibold text-foreground">KYC Analyst</h3>
-                  <p className="text-sm text-muted-foreground mb-3">BYJU'S – Bangalore, India</p>
+                  <p className="text-xs text-muted-foreground mb-1">Jan 2019 – Feb 2022</p>
+                  <h3 className="text-base font-semibold text-foreground">Operations Analyst | BI & MIS Analyst</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Think and Learn Pvt Ltd (BYJU'S – The Learning App) – India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2 items-baseline">
                       <span className="text-primary">•</span>
-                      <span>Reviewed and validated KYC, NACH, POA/POI, and income documents with over 90% accuracy.</span>
+                      <span>Developed Sales and Customer Success dashboards in Power BI and Excel to track KPIs, incentives, service metrics, and operational throughput.</span>
                     </li>
                     <li className="flex gap-2 items-baseline">
                       <span className="text-primary">•</span>
-                      <span>Performed CIP validation, CDD reviews, and due-diligence checks for NBFC-backed education loan onboarding.</span>
+                      <span>Automated reporting and validation workflows, reducing turnaround time by 20% and improving reporting accuracy.</span>
                     </li>
                     <li className="flex gap-2 items-baseline">
                       <span className="text-primary">•</span>
-                      <span>Built Excel/Power BI dashboards to track pipeline progress, compliance metrics, and exception queues.</span>
-                    </li>
-                    <li className="flex gap-2 items-baseline">
-                      <span className="text-primary">•</span>
-                      <span>Supported workflow automation projects that reduced manual verification time by 20%.</span>
-                    </li>
-                    <li className="flex gap-2 items-baseline">
-                      <span className="text-primary">•</span>
-                      <span>Coordinated with risk and audit teams to maintain policy adherence and governance readiness.</span>
+                      <span>Supported customer lifecycle analytics across onboarding, adoption, and retention, and trained business teams on CRM and BI reports to enable self-service insights.</span>
                     </li>
                   </ul>
                 </div>
