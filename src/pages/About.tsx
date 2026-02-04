@@ -207,7 +207,7 @@ const About = () => {
                   <div className="w-px flex-1 bg-border"></div>
                 </div>
                 <div className="flex-1 pb-8">
-                  <p className="text-xs text-muted-foreground mb-1">Jan 2019 – Feb 2022</p>
+                  <p className="text-xs text-muted-foreground mb-1">2019 – 2022</p>
                   <h3 className="text-base font-semibold text-foreground">Operations Analyst | BI & MIS Analyst</h3>
                   <p className="text-sm text-muted-foreground mb-3">Think and Learn Pvt Ltd (BYJU'S – The Learning App) – India</p>
                   <ul className="space-y-1.5 text-sm text-muted-foreground">
