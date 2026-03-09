@@ -77,11 +77,11 @@ const About = () => {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground/70 mb-1">Location</p>
-                <p className="text-foreground text-sm font-medium">Based in Cork, open to relocation</p>
+                <p className="text-foreground text-sm font-medium">Letterkenny, Donegal</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground/70 mb-1">Employment</p>
-                <p className="text-foreground text-sm font-medium">Open to opportunities</p>
+                <p className="text-foreground text-sm font-medium">TCS Ireland</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground/70 mb-1">Languages</p>
