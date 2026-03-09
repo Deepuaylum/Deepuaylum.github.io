@@ -19,7 +19,7 @@ const HeroSection = () => {
         </p>
 
         <div className="mb-8 opacity-0 animate-fade-in-up animation-delay-200">
-          <span className="badge-role">Data and Operations Analyst</span>
+          <span className="badge-role">PowerBI Developer</span>
         </div>
 
         <div className="flex justify-center mb-10 opacity-0 animate-fade-in-up animation-delay-300">

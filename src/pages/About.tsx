@@ -138,6 +138,24 @@ const About = () => {
             <h2 className="text-2xl font-bold text-foreground mb-8">Professional Experience</h2>
             
             <div className="space-y-8">
+              {/* Experience 0 - Current */}
+              <div className="flex gap-6">
+                <div className="flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
+                  <div className="w-px flex-1 bg-border"></div>
+                </div>
+                <div className="flex-1 pb-8">
+                  <p className="text-xs text-muted-foreground mb-1">2026 – Present</p>
+                  <h3 className="text-base font-semibold text-foreground">PowerBI Developer</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Tata Consultancy Services – Letterkenny, Donegal</p>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {["Microsoft Power BI", "Microsoft SQL Server", "Data Analysis", "Data Visualization", "Reporting"].map((skill, i) => (
+                      <span key={i} className="text-xs px-2.5 py-1 rounded-full border border-border text-muted-foreground">{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               {/* Experience 1 */}
               <div className="flex gap-6">
                 <div className="flex flex-col items-center">
@@ -160,8 +178,6 @@ const About = () => {
                   </ul>
                 </div>
               </div>
-
-              {/* Experience 2 */}
               <div className="flex gap-6">
                 <div className="flex flex-col items-center">
                   <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5"></div>
